@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main w-fill min-h-screen bg-zinc-900 p-10 text-white">
+      <a class="text-blue-500 inline-block mb-10" href="/">Go back</a>
+      <form action="/edit" method="post">
+          <input required="true" class="block px-5 py-2 w-full rounded-md bg-zinc-800 outline-none text-zinc-600"type="text" placeholder="previous title"  readonly name="previous" value="<%=filename%>" >
+          <input required="true" class="block px-5 py-2 w-full rounded-md bg-zinc-800 outline-none mt-2"type="text" placeholder="new title" name="new">
+         
+          <input class="mt-2 bg-orange-600 text-white px-5 py-2 rounded-md font-semibold text-white
+         bg-gradient-to-r from-orange-400 via-pink-500 to-purple-600
+         hover:from-orange-500 hover:via-pink-600 hover:to-purple-700
+         transition-all duration-300"type="submit" value="Update">
+        </form>       
+    </div>
+  </body>
+</html>
